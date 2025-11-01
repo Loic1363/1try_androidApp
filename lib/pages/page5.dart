@@ -8,9 +8,7 @@ class Page5 extends StatelessWidget {
     return Scaffold(
       backgroundColor: const Color(0xFF1A1A1A),
       body: const Center(
-        child: Text(
-          'Page 5',
-          style: TextStyle(color: Colors.white, fontSize: 24),
+        child: Text('Page 5', style: TextStyle(color: Colors.white, fontSize: 24),
         ),
       ),
     );
