@@ -16,57 +16,56 @@ class CustomHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-      decoration: BoxDecoration(
-        color: Colors.black,
-        borderRadius: BorderRadius.circular(16),
-      ),
-      padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
-      height: 56,
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          IconButton(
-            icon: const Icon(Icons.calendar_today, color: Colors.white),
-            onPressed: onCalendarPressed,
-            tooltip: 'Select date',
-            padding: EdgeInsets.zero,
-            constraints: const BoxConstraints(),
-          ),
-
-          const Spacer(), 
-
-          Text(
-            dateString,
-            style: const TextStyle(color: Colors.white, fontSize: 16),
-          ),
-
-          const Spacer(), 
-
-          Row(
-            mainAxisSize: MainAxisSize.min,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              IconButton(
-                icon: const Icon(Icons.settings, color: Colors.white),
-                onPressed: onButton1Pressed,
-                tooltip: 'Settings',
-                padding: EdgeInsets.zero,
-                constraints: const BoxConstraints(),
-                visualDensity: VisualDensity.compact,
-              ),
-              IconButton(
-                icon: const Icon(Icons.refresh, color: Colors.white),
-                onPressed: onButton2Pressed,
-                tooltip: 'Refresh',
-                padding: EdgeInsets.zero,
-                constraints: const BoxConstraints(),
-                visualDensity: VisualDensity.compact,
-              ),
-            ],
-          ),
-        ],
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(16),
+      child: Container(
+        margin: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
+        decoration: BoxDecoration(
+          color: const Color(0xFFFAF4DA),
+          borderRadius: BorderRadius.circular(16),
+        ),
+        padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 16),
+        height: 56,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            IconButton(
+              icon: const Icon(Icons.calendar_today, color: Color(0xFF0D0D0D)),
+              onPressed: onCalendarPressed,
+              tooltip: 'Select date',
+              padding: EdgeInsets.zero,
+              constraints: const BoxConstraints(),
+            ),
+            const Spacer(),
+            Text(
+              dateString,
+              style: const TextStyle(color: Color(0xFF0D0D0D), fontSize: 16),
+            ),
+            const Spacer(),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                IconButton(
+                  icon: const Icon(Icons.settings, color: Color(0xFF0D0D0D)),
+                  onPressed: onButton1Pressed,
+                  tooltip: 'Settings',
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(),
+                  visualDensity: VisualDensity.compact,
+                ),
+                IconButton(
+                  icon: const Icon(Icons.refresh, color: Color(0xFF0D0D0D)),
+                  onPressed: onButton2Pressed,
+                  tooltip: 'Refresh',
+                  padding: EdgeInsets.zero,
+                  constraints: const BoxConstraints(),
+                  visualDensity: VisualDensity.compact,
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }

@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Login personnalisé',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xFF1A1A1A),
+        scaffoldBackgroundColor: const Color(0xFFFAF4DA),
       ),
       home: const LoginPage(),
       debugShowCheckedModeBanner: false,
