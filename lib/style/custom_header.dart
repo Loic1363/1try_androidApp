@@ -27,7 +27,6 @@ class CustomHeader extends StatelessWidget {
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          // Bouton calendrier à gauche
           IconButton(
             icon: const Icon(Icons.calendar_today, color: Colors.white),
             onPressed: onCalendarPressed,
@@ -36,17 +35,15 @@ class CustomHeader extends StatelessWidget {
             constraints: const BoxConstraints(),
           ),
 
-          const Spacer(), // pousse la date vers le centre
+          const Spacer(), 
 
-          // Date centrée
           Text(
             dateString,
             style: const TextStyle(color: Colors.white, fontSize: 16),
           ),
 
-          const Spacer(), // pousse les boutons vers la droite
+          const Spacer(), 
 
-          // Boutons à droite
           Row(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.center,
