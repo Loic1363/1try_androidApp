@@ -6,7 +6,6 @@ class Page3 extends StatelessWidget {
 
   String getCurrentFormattedDate() {
     final now = DateTime.now();
-    // Format : jour complet, jour numéro/mois/année deux chiffres
     return DateFormat("EEEE d/M/yy", 'fr_FR').format(now);
   }
 
@@ -29,13 +28,13 @@ class Page3 extends StatelessWidget {
                     style: const TextStyle(
                       color: Colors.white,
                       fontSize: 16,
-                      fontFamily: 'Courier New', // Police monospace souhaitée
+                      fontFamily: 'Courier New',
                     ),
                   ),
                 ],
               ),
             ),
-            // Ici rajoute tes autres widgets pour la saisie ou tableau...
+            // next
           ],
         ),
       ),
