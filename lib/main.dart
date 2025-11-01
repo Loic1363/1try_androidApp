@@ -35,7 +35,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Login personnalisé',
       theme: ThemeData(
-        scaffoldBackgroundColor: const Color(0xFFFAF4DA),
+        scaffoldBackgroundColor: const Color(0xFF1A1A1A),
       ),
       home: const LoginPage(),
       debugShowCheckedModeBanner: false,
@@ -50,6 +50,7 @@ class MyApp extends StatelessWidget {
   Includes a sign in button managing input validation and navigation logic.
   Displays validation and authentication error messages inline below the inputs.
 ===========================================================================================*/
+
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
   @override
@@ -252,6 +253,7 @@ class _LoginPageState extends State<LoginPage> {
             style: TextStyle(color: primaryColor),
             decoration: InputDecoration(
               hintText: hintText,
+              // ignore: deprecated_member_use
               hintStyle: TextStyle(color: primaryColor.withOpacity(0.5)),
               filled: true,
               fillColor: secondaryColor,
