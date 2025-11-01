@@ -1,25 +1,25 @@
-//===========================================================================================
-// LoginApp Flutter Application
-// ------------------------------------------------------------------------------------------
-// This Dart file contains the main entry point and builds the main LoginPage widget
-// for user authentication. The page is styled with a dark theme and includes validation
-// logic for email along with navigation to a second page upon successful login.
-// The code is organized into well-separated reusable widgets and functions for clarity
-// and maintainability.
-//===========================================================================================
+/*===========================================================================================
+  LoginApp Flutter Application
+  ------------------------------------------------------------------------------------------
+  This Dart file contains the main entry point and builds the main LoginPage widget
+  for user authentication. The page is styled with a dark theme and includes validation
+  logic for email along with navigation to a second page upon successful login.
+  The code is organized into well-separated reusable widgets and functions for clarity
+  and maintainability.
+===========================================================================================*/
 
 import 'package:flutter/material.dart';
 import 'functions/validators.dart';
 import 'pages/page2.dart';
 import 'package:intl/date_symbol_data_local.dart';
 
-//===========================================================================================
-// MainApp Widget
-// ------------------------------------------------------------------------------------------
-// This is the root widget of the application, wrapping the LoginPage in a MaterialApp.
-// It applies a consistent dark scaffold background color theme across the app and
-// disables the debug banner for a cleaner presentation.
-//===========================================================================================
+/*===========================================================================================
+  MainApp Widget
+  ------------------------------------------------------------------------------------------
+  This is the root widget of the application, wrapping the LoginPage in a MaterialApp.
+  It applies a consistent dark scaffold background color theme across the app and
+  disables the debug banner for a cleaner presentation.
+===========================================================================================*/
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -43,13 +43,13 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//===========================================================================================
-// LoginPage Widget
-// ------------------------------------------------------------------------------------------
-// Provides the login UI with input fields for email and password, styled with custom colors.
-// Includes a sign in button managing input validation and navigation logic.
-// Displays validation and authentication error messages inline below the inputs.
-//===========================================================================================
+/*===========================================================================================
+  LoginPage Widget
+  ------------------------------------------------------------------------------------------
+  Provides the login UI with input fields for email and password, styled with custom colors.
+  Includes a sign in button managing input validation and navigation logic.
+  Displays validation and authentication error messages inline below the inputs.
+===========================================================================================*/
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
   @override

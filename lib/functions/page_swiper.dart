@@ -31,6 +31,9 @@ class _PageSwiperState extends State<PageSwiper> {
           onPageChanged: (index) => setState(() => _currentIndex = index),
           children: widget.pages,
         ),
+
+        // --- MENU EN HAUT À DROITE (DÉSACTIVÉ POUR LE MOMENT) ---
+        /*
         Positioned(
           top: 20,
           right: widget.topButtonRightOffset,
@@ -45,6 +48,7 @@ class _PageSwiperState extends State<PageSwiper> {
             }),
           ),
         ),
+        */
         Positioned(
           bottom: 20,
           left: 0,
@@ -63,7 +67,7 @@ class _PageSwiperState extends State<PageSwiper> {
               );
             }),
           ),
-        )
+        ),
       ],
     );
   }
