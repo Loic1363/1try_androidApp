@@ -32,7 +32,6 @@ class _PageSwiperState extends State<PageSwiper> {
           children: widget.pages,
         ),
 
-        // --- MENU EN HAUT À DROITE (DÉSACTIVÉ POUR LE MOMENT) ---
         /*
         Positioned(
           top: 20,
