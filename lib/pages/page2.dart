@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import '../functions/date_utils.dart';
@@ -40,7 +41,9 @@ class _Page2State extends State<Page2> {
   }
 
   void onSettingsPressed() {
-    print("Settings pressed");
+    if (kDebugMode) {
+      print("Settings pressed");
+    }
   }
 
   @override

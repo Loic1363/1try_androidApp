@@ -7,20 +7,13 @@ class PageSwiper extends StatefulWidget {
   const PageSwiper({required this.pages, this.topButtonRightOffset = 10, super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _PageSwiperState createState() => _PageSwiperState();
 }
 
 class _PageSwiperState extends State<PageSwiper> {
   final PageController _controller = PageController();
   int _currentIndex = 0;
-
-  void _goToPage(int index) {
-    _controller.animateToPage(
-      index,
-      duration: const Duration(milliseconds: 300),
-      curve: Curves.easeInOut,
-    );
-  }
 
   @override
   Widget build(BuildContext context) {

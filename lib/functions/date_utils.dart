@@ -8,9 +8,3 @@ Future<DateTime?> selectDate(BuildContext context, DateTime initialDate) {
     lastDate: DateTime(2100),
   );
 }
-
-
-//String formattedTodayDate() {
-//  final now = DateTime.now();
-//  return DateFormat("EEEE d/M/yy", 'fr_FR').format(now);
-//}
