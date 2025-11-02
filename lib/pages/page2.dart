@@ -63,10 +63,10 @@ class _Page2State extends State<Page2> {
             ),
             Expanded(
               child: PageSwiper(
-                pages: const [
-                  Page3(),
-                  Page4(),
-                  Page5(),
+                pages: [
+                  Page3(selectedDate: currentDate),
+                  const Page4(),
+                  const Page5(),
                 ],
               ),
             ),
